@@ -4,9 +4,13 @@ def getNumPlayers(self):
         if int(numplayers) < 10 and int(numplayers) >1:
             return numplayers
 def getCards(self):
-    c1 = input("Type your first card(Ah is Ace of hearts): ")
-    c2 = input("Type your second card: ")
-    return c1+c2
+    from handRankHeadsup import hands_ranked_headsup
+    valid_combos = hands_ranked_headsup.keys()
+    while True:
+        combo = input("Type your hand combo (e.g. AKs, AKo, AA): ")
+        if combo in valid_combos:
+            return combo
+        print(f"Invalid combo '{combo}'. Must be one of the 169 combos (e.g. AKs, AKo, AA).")
 
 
 
