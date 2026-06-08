@@ -86,6 +86,12 @@ Feeding $p \approx 0.0294$ and $N = 6$ into the binomial gives a finishing-posit
 - 3rd: about $0.8\%$
 - 4th and lower: near $0\%$
 
+This is exactly the bar chart the program draws for `AKs` at a 6-player table:
+
+<p align="center">
+  <img src="docs/sample_AKs_6players.png" alt="Finishing position distribution for AKs at a 6-player table" width="640">
+</p>
+
 ## Code Structure
 
 The project follows a small object-oriented design where one class owns the data and the others depend on it.
