@@ -16,7 +16,7 @@ class UserInput:
     def get_cards(self):
         valid_combos = self.hand_ranking.rank_by_Hand.keys()
         while True:   
-            combo = input("Type your hand combo (e.g. AKs, AKo, 55) [bigger card first]: ")
+            combo = input("Type your hand combo (e.g. AKs, QTo, 55) [bigger card first]: ")
             if combo in valid_combos:
                 return combo
             print(f"Invalid combo '{combo}'. Must be one of the 169 combos (e.g. AKs, AKo, AA).") 
